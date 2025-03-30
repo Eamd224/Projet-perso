@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+#home{
+    background-image: url(img/netflix-popout.jpg);   
+}
+
+nav {
+    background-color: transparent; 
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+form {
+    background-color: rgba(0,0,0, .75);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+}
+
+input {
+    padding: 16px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    font-size: 16px;
+    color: #fff;
+    opacity: 8;
+    outline: none;
+}
+
+input[type=submit]{
+    background-color: rgb(211, 8, 18);
+}
+
+label {
+    color: #fff;
+}
+
+p {
+    color: #737373;
+}
+
+.content {
+    margin: 0 10%;
+    margin-top: 150px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+                       /*⬇️ ⬇️ page 2 profil  ⬇️ ⬇️*/
+
+
+ #profil-page {
+      background-color: black;
+  }
+
+ #profil-page .row {
+    justify-content: space-between;
+ }
+
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+  }
+
+  .profil img {
+    width: 200px;
+    height: 150px;
+    filter: grayscale(0) blur(0px); /* filtrer img de couleur a gris*/
+    transition: all 0.5s ease;
+  }
+  .profil:hover img {
+    width: 150px; 
+  height: 150px;
+  border-radius: 50%;  
+  transform: rotate(360deg);
+ }
+
+ .profil:hover p {
+    color: #fff;
+  }
+
+  .profil a {
+    text-decoration: none;
+  }
+
+                     /* ⬇️ ⬇️ page films 3 ⬇️ ⬇️*/
+#films-page {
+    background-color: black;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    padding-left: 10px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+video {
+    width: 100%;
+}
+
+#video {
+    height: 600px;
+    overflow: hidden;
+}
+
+#films-page nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+h2{
+    color: #fff;
+}
+.space-b {
+    display: flex;
+    justify-content: center;
+}
+.space-b img {
+    width: 300px;
+    height: 150px;
+    padding-left: 40px;
+    margin-top: 10px;
+}
+#films-page .content {
+    margin-top: 10px;
+}
+
+            /* ⬇️ ⬇️page 4 info  footer ⬇️ ⬇️*/
+
+#infos {
+    background-color: black;
+}
+.credit h2 {
+    margin-left: 30px;
+}
+.credit ul {
+    margin: 50px;
+    padding-bottom: 10px;
+}
+
+.credit a  {
+    color: #1146cd; 
+    list-style: none;
+    text-decoration: none;
+}
+
+.credit a:hover {
+    color: rgb(157, 22, 22);
+}
+   
+
+
+footer {
+    position: absolute;
+     bottom: 0;
+     width: 100%;
+     box-sizing: border-box;
+     background-color: rgba(184, 5, 5, 0.504);
+     text-align: center;   
+ }
+ 
+ footer p{
+     color:whitesmoke;
+     font-size: small;
+     font-weight: bold;
+     padding: 5px;
+ }
+ 
+ #imageInline {
+     width: 20%;
+     display: inline;
+ }
+ 
+ footer img {
+     width: 30px;
+     margin-right: 10px;
+     margin-left: 10px;
+     border-radius: 10%;
+     padding-bottom: 10px;
+ }
+    
+.footer-bottom {
+    background: black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .5;
+    font-weight: 200;
+}
